@@ -205,12 +205,12 @@ html, body {
 }
 
 @keyframes pulse-animation {
-0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-}
-100% {
-    box-shadow   : 0 0 0 8px rgba(0, 0, 0, 0);
-}
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow   : 0 0 0 8px rgba(0, 0, 0, 0);
+    }
 }  
 
 .wallet-btn {
@@ -292,3 +292,34 @@ html, body {
 }
 /* dasboard list end */
 /* ========= dashboard end ===========*/
+
+@media screen and (max-width: 991.98px) {
+    .body {
+        display : none !important;
+    }
+    .alert-view {
+        display: block !important;
+        height: 100vh !important;
+        width: 100vw !important;
+        display: flex !important;
+        align-item: center !important;
+        justify-content: center !important
+    }
+    .box-alert {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        background-color: #06192D !important;
+        animation: pulse-animation-big 500ms infinite;
+    }
+    @keyframes pulse-animation-big {
+        0% {
+            box-shadow: 0 0 0 0px rgba(93, 110, 128, 0.5);
+        }
+        100% {
+            box-shadow   : 0 0 0 40px rgba(93, 110, 128, 0);
+        }
+    }  
+    .logo-alert-view {
+        width: 30vw !important;
+    }
+}
